@@ -1,7 +1,7 @@
 from contextlib import asynccontextmanager
 from fastapi import FastAPI
 
-from app.db import init_db
+from .db import init_db
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -9,3 +9,7 @@ async def lifespan(app: FastAPI):
     yield
     
 app = FastAPI(lifespan=lifespan)
+
+@app.get("/")
+def root():
+    return {"message": "Hello World"}
