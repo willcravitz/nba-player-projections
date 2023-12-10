@@ -10,9 +10,9 @@ Clone the repository, and in the root of the directory run the following:
 
 Create a `.env` file in the root of the directory and add the following line:
 
-      DATABASE_URL=sqlite:///<database_name>.db
+      DATABASE_URL=sqlite:///db.sqlite3
 
-where `<database_name>` can be whatever you choose.
+When you run the server for the first time it should create your SQLite db.
 
 ## Running the Server
 From the root of the directory run:
