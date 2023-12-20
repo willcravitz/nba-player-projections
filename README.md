@@ -1,5 +1,8 @@
 # NBA Player Projections
 
+## Project Structure
+![image](https://github.com/willcravitz/nba-player-projections/assets/93291811/a4e77e29-6a09-4abc-9d5a-99cea471db84)
+
 ## Setup
 Clone the repository, and in the root of the directory run the following:
        
